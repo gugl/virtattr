@@ -1,0 +1,4 @@
+== README
+
+This is a test application for rails issue: 11853
+https://github.com/rails/rails/issues/11853#issuecomment-34092778
