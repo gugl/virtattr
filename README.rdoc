@@ -9,4 +9,24 @@ rake assets:clobber
 rake assets:precompile
 ```
 
-Does not hit database... db user credentials are invalid
+Should not try to hit database... db user credentials are invalid
+
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "invalid" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database
+/Users/gugl/projects/github/gugl/virtattr/app/models/post.rb:2:in `<class:Post>'
+/Users/gugl/projects/github/gugl/virtattr/app/models/post.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/app/admin/post.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/routes.rb:3:in `block in <top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/routes.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/environment.rb:5:in `<top (required)>'
+PG::ConnectionBad: FATAL:  role "invalid" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database
+/Users/gugl/projects/github/gugl/virtattr/app/models/post.rb:2:in `<class:Post>'
+/Users/gugl/projects/github/gugl/virtattr/app/models/post.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/app/admin/post.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/routes.rb:3:in `block in <top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/routes.rb:1:in `<top (required)>'
+/Users/gugl/projects/github/gugl/virtattr/config/environment.rb:5:in `<top (required)>'
+Tasks: TOP => environment
+(See full trace by running task with --trace)
